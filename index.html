@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="container">
+  <div class="frame">
+    <div class="nav">
+        <li class="signin-active"><a class="btn">Sign in</a></li>
+    </div>
+    <div ng-app ng-init="checked = false">
+                <form class="form-signin" action="" method="post" name="form">
+          <label for="username">Username</label>
+          <input class="form-styling" type="text" id="username" name="username" placeholder="" required>
+          <label for="password">Password</label>
+          <input class="form-styling" type="password" id="password" name="password" placeholder="" required>
+          <input type="checkbox" id="checkbox"/>
+          <p id="fail"></p>
+          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
+          <div class="btn-animate">
+            <a class="btn-signin">Sign in</a>
+          </div>
+                </form>
+      </div>  
+  </div>
+</div>
+<input type="password" id="get">
+<script src="login.js"></script>
+</body>
+</html>
